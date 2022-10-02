@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> JavaScript Append </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="llc.css">
+</head>
+
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+    
+
+      </div>
+    
+</body>
+<script>
+    
+    let allPrimes = (n) => {
+    //Create new n+1 array and mark them as true
+    let isPrime = new Array(n + 1).fill(true);
+    isPrime[0] = false;
+    isPrime[1] = false;
+
+    let primes = [];
+
+    for (let i = 2; i <= n; i++) {
+        //if the number is  
+        if (isPrime[i] === true) {
+            primes.push(i);
+        }
+
+        //mark all the numbers divisible i as false
+        let next = i * i;
+        while (next <= n) {
+            isPrime[next] = false;
+            next += i;
+        }
+    }
+
+    return primes;
+}
+
+let X=[allPrimes(100)];
+
+  
+
+
+document.getElementsByClassName(container).append(X);
+// document.getElementById("1").innerHTML=(allPrimes(100));
+
+
+
+</script>
+
+</html>

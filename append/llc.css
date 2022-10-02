@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color:black;
+  }
+  .container div {
+    background-color:white;
+    aspect-ratio: 1;
+  }

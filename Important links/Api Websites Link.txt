@@ -1,0 +1,2 @@
+devloper.mozila link for api:-https://developer.mozilla.org/en-US/docs/web/api/fetch_api/using_fetch
+jsonplaceholder.typeicode link:-https://jsonplaceholder.typicode.com/

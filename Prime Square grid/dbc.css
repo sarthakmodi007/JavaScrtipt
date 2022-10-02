@@ -1,0 +1,32 @@
+.container {
+  background: white;
+  display: inline-block;
+  border: 5px solid black;
+}
+  
+  .grid {
+    width: 100px;
+  }
+   
+  .cell-container {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     border: 5px solid blueviolet;
+    }
+
+    .cell{
+      font-family: arial;
+      font-size: 2rem;
+      color: black;
+      font-weight: bold;
+      background: white;
+      text-align: center;
+      border: 1px solid black;
+      justify-content: center;
+      display: flex;
+      flex: 1 0 19%;
+      height: 123px;
+      width: 100px;
+      align-items: center;
+    }
